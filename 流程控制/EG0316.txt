@@ -1,0 +1,14 @@
+// Program: EG0316.c
+// Description: 编程求输入的两个自然数的最大公约数
+#include <stdio.h>
+void main( void )
+{
+    short num1, num2, gcd;
+    printf("Input num1,num2:");
+    scanf("%d,%d",&num1,&num2);
+	
+    gcd= num1<num2 ? num1: num2;
+    for(; num1%gcd || num2%gcd; )
+		gcd--;
+    printf("The greatest common divisor of %d & %d is: %d\n", num1, num2, gcd);
+}

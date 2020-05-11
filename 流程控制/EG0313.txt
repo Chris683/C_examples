@@ -1,0 +1,20 @@
+// Program: EG0313.C
+// Description: 输出300以内所有能被9整除的数
+#include <stdio.h>
+void main( void )
+{
+	int i=1, j=0;
+	
+	printf(" 300以内能被9整除的数有:\n");
+	do
+	{
+		if( !(i%9) ) 	// if( i%9==0 )
+		{
+			printf("%5d,", i);
+			j++;
+			if( !(j%6) )
+				printf("\n");
+		}
+	}while( ++i<300 );
+	printf("\b \n");
+}

@@ -1,0 +1,18 @@
+// Program: EG04-01.C  
+// Description: 输入10 个整数，要求逆序打印其中的自然数。 
+
+#include <stdio.h>
+void main( void )
+{ 
+    short num[10], i ;             
+ 
+    printf("请输入10个整数:");       
+    for(i=0; i<10; i++)                     // 顺序输入10个数据 
+         scanf("%d,",&num[i]); 
+    
+    printf("逆序打印其中的自然数:");      
+    for(i=9; i>=0; i--)                                //逆序访问各数组元素 
+         if(num[i]>0) 
+             printf("%d,", num[i]);              //打印正数 
+} 
+

@@ -1,0 +1,17 @@
+// Program: EG0317.c
+// Description: 编程打印出所有的"水仙花数"
+#include <stdio.h>
+void main( void )
+{
+    short a, b, c, i;
+    printf("水仙花数：");
+    for(i=100; i<=999; i++)
+    {
+        a=i%10;       	//个位
+		b=i%100/10;   	//十位
+		c=i/100;       	//百位
+		if(i==a*a*a+b*b*b+c*c*c)
+			printf("%5d,",i);
+    }
+	printf("\b \n");
+}

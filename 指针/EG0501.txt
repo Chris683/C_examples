@@ -1,0 +1,10 @@
+// Program: EG0501.c 					    
+// Description: 变量与地址 
+#include <stdio.h> 	
+void main( void )               	
+{
+	short Short1=0x31, Short2=0x60;	
+	
+	printf(" Short1=%x in %x\n", Short1, &Short1 );  	
+	printf(" Short2=%x in %x\n", Short2, &Short2 );  
+}

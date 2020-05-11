@@ -1,0 +1,19 @@
+ // Description: ×Ö·û´®·­×ª.
+#include <stdio.h> 
+#include <string.h>
+void main( void )               	
+{
+	char str[]="teststring", *s, *t, c;
+	printf("Ô­×Ö·û´®Îª: %s\n", str);
+	s=str; t=s+strlen(s)-1;
+	while(s<t)
+	{
+		c=*s;
+		*s=*t; 
+		*t=c; 
+		++s;
+		--t;
+	}
+	
+	printf("·­×ª×Ö·û´®Îª: %s\n", str);
+}
